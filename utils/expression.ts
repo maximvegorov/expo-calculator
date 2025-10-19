@@ -14,7 +14,11 @@ export class Expression {
     }
 
     public push(c: string): Expression {
-        return new Expression(this.display + c);
+        const newDisplay = this.display + c;
+        if (/^00+$/.test(newDisplay)) {
+            return this;
+        }
+        return new Expression(newDisplay);
     }
 
     public pop(): Expression {

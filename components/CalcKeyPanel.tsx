@@ -14,25 +14,25 @@ export function CalcKeyPanel({onKeyPress}: CalcKeyPanelProps) {
                 <CalcKey label='C' code={commands.CLEAR} onKeyPress={onKeyPress}/>
                 <CalcKey label='⌫' code={commands.POP} onKeyPress={onKeyPress}/>
                 <CalcKey label='%' onKeyPress={onKeyPress}/>
-                <CalcKey label='/' onKeyPress={onKeyPress}/>
+                <CalcKey label='*' onKeyPress={onKeyPress}/>
             </View>
             <View style={styles.row}>
                 <CalcKey label='7' onKeyPress={onKeyPress}/>
                 <CalcKey label='8' onKeyPress={onKeyPress}/>
                 <CalcKey label='9' onKeyPress={onKeyPress}/>
-                <CalcKey label='*' onKeyPress={onKeyPress}/>
+                <CalcKey label='/' onKeyPress={onKeyPress}/>
             </View>
             <View style={styles.row}>
                 <CalcKey label='4' onKeyPress={onKeyPress}/>
                 <CalcKey label='5' onKeyPress={onKeyPress}/>
                 <CalcKey label='6' onKeyPress={onKeyPress}/>
-                <CalcKey label='-' onKeyPress={onKeyPress}/>
+                <CalcKey label='+' onKeyPress={onKeyPress}/>
             </View>
             <View style={styles.row}>
                 <CalcKey label='1' onKeyPress={onKeyPress}/>
                 <CalcKey label='2' onKeyPress={onKeyPress}/>
                 <CalcKey label='3' onKeyPress={onKeyPress}/>
-                <CalcKey label='+' onKeyPress={onKeyPress}/>
+                <CalcKey label='-' onKeyPress={onKeyPress}/>
             </View>
             <View style={styles.row}>
                 <CalcKey label='00' onKeyPress={onKeyPress}/>

@@ -6,7 +6,7 @@ export interface ExpressionValueProps {
     value: Value;
 }
 
-const FORMATTER = Intl.NumberFormat(undefined, {style: "decimal"});
+const FORMATTER = Intl.NumberFormat(undefined, {style: "decimal", maximumFractionDigits: 16});
 
 export function ExpressionValue({value}: ExpressionValueProps) {
     const theme = useTheme();
